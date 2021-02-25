@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang='pt-br'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Manipulando o DOM</title>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1><time>00:00:00</time></h1>
+      <button id="start">Iniciar</button>
+      <button id="stop">Parar</button>
+      <button id="reset">Resetar</button>
+    </div>
+
+    <div class="blue" id='div1'></div>
+    <div class="container" id='div2'></div>
   
+  </body>
+
+
+  <style>
+    .red {color: red}
+    .blue{color: blue}
+  </style>
+
+    <script>
+
+      const botao = document.getElementById('stop')
+      const container = document.getElementsByClassName('container')
+      const botoeslist = document.getElementsByTagName('button')
+
+      const resetbutton = document.querySelector('#reset')
+      const buttons = document.querySelectorAll('button')
+
+      let div1 = document.querySelector("#div1")
+      div1.innerHTML = "<p>Este é o nosso cronômetro<p>"
+      let div2 = document.querySelector("#div2")
+
+      const texto = document.createTextNode('Adicionando texto dinamicamente')
+      const paragrafo = document.createElement('p')
+
+      paragrafo.appendChild(texto)
+      div2.appendChild(paragrafo)
+
+      div2.classList.add('red')
+  
+    </script>
+
+
 
 
 </html>
