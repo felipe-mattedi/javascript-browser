@@ -7,16 +7,17 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1><time>00:00:00</time></h1>
-      <button id="start">Iniciar</button>
-      <button id="stop">Parar</button>
-      <button id="reset">Resetar</button>
-    </div>
+   
+      <div class="container" id='divPrincipal'>
+        <h1><span id='hora'>--</span>:<span id='minuto'>--</span>:<span id='segundo'>--</span>.<span id='mili'>----</span></h1>
+        <button id="start">Iniciar</button>
+        <button id="stop">Parar</button>
+        <button id="reset">Resetar</button>
+      </div>
 
-    <div class="blue" id='div1'></div>
-    <div class="container" id='div2'></div>
-  
+      <div class="blue" id='div1'></div>
+      <div class="container" id='div2'></div>
+
   </body>
 
 
@@ -45,6 +46,83 @@
       div2.appendChild(paragrafo)
 
       div2.classList.add('red')
+
+      let horas = 0 
+      let minutos  = 0 
+      let segundos = 0  
+      let mili  = 0 
+      let cronometro = 0 
+
+      let txtHora = document.getElementById('hora')
+      let txtMin = document.getElementById('minuto')
+      let txtSec = document.getElementById('segundo')
+      let txtMil = document.getElementById('mili')
+
+      const btnReset = document.querySelector('#reset')
+      btnReset.addEventListener('click', function(){reset()})
+
+      const btnStart = document.querySelector('#start')
+      btnStart.addEventListener('click', function(){start()})
+
+      const btnStop = document.querySelector('#stop')
+      btnStop.addEventListener('click', function(){stop()})
+
+      function start(){
+        cronometro = setInterval( () => {
+          timer()
+        }, 10)
+
+      }
+
+      function stop(){
+        clearInterval(cronometro)
+
+      }
+
+      function reset(){
+        let horas = 0
+        let minutos = 0
+        let segundos = 0
+        let mili = 0
+
+        txtHora.innerText ='00'
+        txtMin.innerText ='00'
+        txtSec.innerText ='00'
+        txtMil.innerText ='0000'
+      }
+
+
+      function timer(){
+        if((mili += 10) == 1000){
+          mili = 0
+          segundos++
+        }
+
+        if (segundos == 60){
+          segundos = 0
+          minutos++
+        }
+
+        if (minutos == 60){
+          minutos = 0
+          horas++
+        }
+
+        if (horas == 24){
+          horas = 0
+        }
+
+        txtHora.innerText = returnData(horas)
+        txtMin.innerText = returnData(minutos)
+        txtSec.innerText = returnData(segundos)
+        txtMil.innerText = returnData(mili)
+
+      }
+
+      function returnData(value){
+        return value > 10 ? value : `0${value}`
+      }
+
   
     </script>
 
