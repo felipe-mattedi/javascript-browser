@@ -1,0 +1,266 @@
+.header{
+  display: flex;
+  align-items: space-evenly;
+  padding: 2rem 3rem 0rem 3rem;
+}
+
+.header .redes-sociais {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  width: 33.33%;
+ }
+ 
+ .header .redes-sociais .rede-social{
+   width: 5%;
+   margin:0 0.5rem;
+ }
+
+ .header  .carrinho-compras{
+  width:33.33%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.header  .carrinho-compras .carrinho{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width:15%;
+  margin-right: 1rem;
+ 
+}
+
+
+.header .logo-aurora .logo-principal{
+  width: 100%;
+}
+
+.header .logo-aurora{
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content .nav-bar {
+ padding: 2rem 15rem 2rem 15rem;
+}
+
+.main-content .nav-bar ul {
+  display:flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+
+.lista-produtos {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.lista-produtos .caixa-produto{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:2rem 0;
+
+}
+
+.lista-produtos .caixa-produto .imagem-produto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:50%
+}
+
+.lista-produtos .caixa-produto .imagem-produto img{
+  width: 100%
+}
+
+.lista-produtos .caixa-produto .informacoes-produto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding:2rem
+}
+
+.lista-produtos .caixa-produto .informacoes-produto .seletores-quantidade{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lista-produtos .caixa-produto .informacoes-produto .seletores-quantidade input{
+  margin: 0 1rem;
+  width: 2rem
+}
+
+.button{
+  width: 8rem;
+  height: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem ;
+  font-weight: 900;
+  background-color: #8a817cff;
+  border:0;
+
+}
+.main-content{
+  background-image: linear-gradient(to bottom,  white, #bcb8b1ff);
+  
+}
+
+.tabela-carrinho{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+.tabela-carrinho .listagem-carrinho{
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  border-style: double;
+  border-bottom: none;
+}
+
+.tabela-carrinho .listagem-carrinho .entrada-carrinho{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.tabela-carrinho .listagem-carrinho .entrada-carrinho .caixa-produto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  border-right-color: black;
+  border-right-style: double;
+  border-bottom-color: black;
+  border-bottom-style: double;
+  
+
+}
+
+.tabela-carrinho .listagem-carrinho .entrada-carrinho .caixa-produto img{
+  width: 30%;
+  padding: 1rem;
+
+
+
+}
+
+.tabela-carrinho .listagem-carrinho .entrada-carrinho .produto-titulo{
+  border-bottom-color: black;
+  border-bottom-style: double;
+  border-right-color: black;
+  border-right-style: double;
+  width: 50%;
+
+
+}
+
+.tabela-carrinho .listagem-carrinho .entrada-carrinho .produto{
+
+  width: 50%;
+
+
+}
+
+.tabela-carrinho .listagem-carrinho .entrada-carrinho .quantidade{
+  width: 20%;
+  border-right-color: black;
+  border-right-style: double;
+  border-bottom-color: black;
+  border-bottom-style: double;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.tabela-carrinho .listagem-carrinho .entrada-carrinho .total{
+  width: 30%;
+  border-bottom-color: black;
+  border-bottom-style: double;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tabela-carrinho .resumo-valores{
+  display: flex;
+  flex-direction: row;
+  border-color: black;
+  border-style: double;
+  border-top: none
+}
+
+.tabela-carrinho .resumo-valores .caixa-cep{
+  padding: 1rem 0rem 0rem 1rem;
+  width: 50%;
+  border-right-color: black;
+  border-right-style: double;
+}
+
+.tabela-carrinho .resumo-valores .totais{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.tabela-carrinho .resumo-valores .totais .subtotal, .tabela-carrinho .resumo-valores .totais .frete, .tabela-carrinho .resumo-valores .totais .total{
+  border-bottom-color: black;
+  border-bottom-style: double;
+  display:flex;
+
+}
+
+.tabela-carrinho .resumo-valores .totais .subtotal .valor-subtotal, .tabela-carrinho .resumo-valores .totais .frete .valor-frete, .tabela-carrinho .resumo-valores .totais .total .valor-total{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+
+  
+  }
+
+  .tabela-carrinho .resumo-valores .totais .subtotal p, .tabela-carrinho .resumo-valores .totais .frete p, .tabela-carrinho .resumo-valores .totais .total p{
+    border-right-color: black;
+    border-right-style: double;
+    width: 40%
+    
+    }
+  
+
+
+.main-content .nav-bar ul .item-menu, .btn-aumenta, .btn-diminui{
+ 
+  font-weight: 900;
+  font-size: 1.2rem;
+  overflow: hidden;
+  background: linear-gradient(to top, #e0afa0ff,  #e0afa0ff 50%,  #463f3aff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 200%;
+  background-position: 100% 0%;
+  transition: background-position 1s ease;
+  text-decoration: none;
+
+}
+
+.main-content .nav-bar ul .item-menu:hover, .btn-aumenta:hover, .btn-diminui:hover {
+  background-position: 0% 100%;
+  transition: 2s;   
+
+}

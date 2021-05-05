@@ -1,0 +1,322 @@
+.button{
+  width: 12rem;
+  height: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem ;
+  font-weight: 900;
+  background-color: #8a817cff;
+  border:0;
+}
+
+.separa-secao {
+  height:500px;
+}
+
+.header{
+  margin: 1rem 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.header .logo-aurora{
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
+.header .logo-aurora .logo-principal{
+  width: 100%;
+}
+
+.header .redes-sociais {
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ width: 33.33%;
+}
+
+.header .redes-sociais .rede-social{
+  width: 5%;
+  margin:0 0.5rem;
+}
+
+.header  .carrinho-compras{
+  width:33.33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header  .carrinho-compras .carrinho{
+  width:10%;
+}
+
+
+.main-content .mosaico{
+  background: url("background.PNG") no-repeat top center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.background-color-1{
+  background-image: linear-gradient(to bottom,  white, #bcb8b1ff,white);
+  
+
+}
+
+.background-color-2{
+  background-image: linear-gradient(to bottom,  white, #bcb8b1ff,white);
+
+}
+
+.main-content{
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.main-content .nav-bar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 60%;
+  margin:0 auto;
+}
+
+.main-content .nav-bar ul .item-menu{
+ 
+  font-weight: 900;
+  font-size: 1.2rem;
+  overflow: hidden;
+  background: linear-gradient(to top, #e0afa0ff,  #e0afa0ff 50%,  #463f3aff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 200%;
+  background-position: 100% 0%;
+  transition: background-position 1s ease;
+  text-decoration: none;
+
+}
+
+.main-content .nav-bar ul .item-menu:hover {
+    background-position: 0% 100%;
+    transition: 2s;   
+
+  }
+
+  .main-content .principal{
+
+    padding: 6rem 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+  }
+
+  .main-content .principal .descricao{
+
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    
+    
+  }
+
+  .main-content h2{
+
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .main-content h2{
+
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .main-content h3{
+
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 400;
+  }
+
+  .main-content h4{
+
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 400;
+  }
+
+
+  .main-content .principal p{
+
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+
+
+  .main-content .principal img{
+
+    width: 30%;
+    border-radius: 2rem;
+
+    
+  }
+
+  .main-content .produtos {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .main-content .produtos .velas{
+
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+  }
+
+  .main-content .produtos .velas .velas-descricao{
+
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   width: 50%;
+ 
+   }
+
+  .main-content .produtos .velas img{
+
+   width: 40%;
+   border-radius: 2rem;
+
+  }
+
+
+  .main-content .produtos .velas .apresenta-direita {
+    
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 2rem 2rem;
+   margin:1rem 0;
+   
+  }
+
+  .main-content .produtos .velas .apresenta-esquerda {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 2rem;
+    margin:1rem 0;
+    
+   }
+ 
+
+  .main-content .produtos .velas .tipo-vela img{
+
+    width: 100%;
+   
+  }
+
+  footer{
+    margin:5rem 0 0 0;
+  }
+
+  footer h5{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .footer-div{
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    height: 220px;
+  }
+
+  .footer-div .footer-main{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .footer-div .nav-bar{
+    width: 50%;
+  }
+
+
+  .footer-div .footer-main .redes-sociais{
+   display: flex;
+   justify-content: flex-start;
+  }
+
+  .footer-div .footer-main .redes-sociais .rede-social{
+    width: 5%;
+    margin: 1rem;
+  }
+
+  .footer-div .footer-main h3{
+    font-size: 2rem;
+
+  }
+
+  .footer-div .footer-main h4{
+    font-size:1.5rem;
+
+  }
+
+  .footer-div .nav-bar ul{
+    list-style: none;
+    text-decoration: none;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .footer-div .nav-bar ul li{
+    margin: 0.5rem auto;
+  }
+
+  .footer-div .nav-bar ul .item-menu{
+  font-weight: 900;
+  font-size: 1rem;
+  overflow: hidden;
+  background: linear-gradient(to top, #e0afa0ff,  #e0afa0ff 50%,  #463f3aff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 200%;
+  background-position: 100% 0%;
+  transition: background-position 1s ease;
+  text-decoration: none;
+
+  }
+
+  .footer-div .nav-bar ul .item-menu:hover {
+    background-position: 0% 100%;
+    transition: 2s;   
+
+  }

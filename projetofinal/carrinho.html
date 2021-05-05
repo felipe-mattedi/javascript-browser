@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='css/reset.css'>
+  <link rel='stylesheet' href='css/style.css'>
+  <title>Carrinho - Aurora Velas</title>
+</head>
+<body>
+  <header class='header'>
+    <div class='redes-sociais'>
+      <img src='images/facebook.svg' class='rede-social' alt='Logo Facebook'>
+      <img src='images/instagram.svg' class='rede-social' alt='Logo Instagram'>
+    </div>
+    <div class='logo-aurora'>
+    <img src='images/logo-aurora.jpg' class='logo-principal' alt="Logo Aurora Velas">
+  </div>
+  <div class='carrinho-compras'>
+    <a href='carrinho.html' class='carrinho' >
+      <img src='images/carrinho.svg' alt='Carrinho de Compras'>
+    </a> 
+    <p id='qtd-carrinho'></p>
+  </div>
+  </header>
+    <main class='main-content'>
+          <nav class='nav-bar'>
+            <ul>
+              <li><a href='#' class='item-menu'>HOME</a></li>
+              <li><a href='listaprodutos.html' class='item-menu'>COMPRAS</a></li>
+              <li><a href='#' class='item-menu'>NOSSA HISTORIA</a></li>
+              <li><a href='#' class='item-menu'>CONTATO</a></li>
+            </ul>
+          </nav>
+          <div class='tabela-carrinho'>
+            <div class='listagem-carrinho'>
+              <div class='entrada-carrinho'>
+                <p class='produto-titulo'>Produto</p>
+                <p class='quantidade'>Quantidade</p>
+                <p class = 'total'>Total</p>
+              </div>
+            </div>
+            <div class='resumo-valores'>
+              <div class='caixa-cep'>
+                <p>CEP:<input type="number" id='entrada-cep'></p>
+              </div>
+              <div class='totais'>
+                <div class='subtotal'>
+                  <p>Subtotal</p>
+                  <p class='valor-subtotal'></p>
+                </div>
+                <div class='frete'>
+                  <p>Frete</p>
+                  <p class='valor-frete'></p>
+                </div>                
+                <div class='total'>
+                  <p>Total Compra</p>
+                  <p class='valor-total'></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+      
+    </main>
+</body>
+</html>
+<script type="text/javascript" src="scripts.js"></script>
